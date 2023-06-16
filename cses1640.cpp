@@ -12,14 +12,11 @@ int main(){
     cin>>n>>x;
     for (ll i=1;i<=n;i++){
         cin>>a[i];
-        if (mp[x-a[i]]==1){
-            for (ll j=1;j<i;j++)
-                if (a[j]==x-a[i]){
-                    cout<<j<<" "<<i;
-                    return 0;
-                }
+        if (mp[x-a[i]]!=0){
+            cout<<mp[x-a[i]]<<" "<<i;
+            return 0;
         }
-        mp[a[i]]=1;
+        mp[a[i]]=i;
     }
     cout<<"IMPOSSIBLE";
 }
