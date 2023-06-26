@@ -3,7 +3,6 @@
 
 using namespace std;
 
-
 ll a,b,u,v,x,y;
 int main(){
     ios_base::sync_with_stdio(false);
